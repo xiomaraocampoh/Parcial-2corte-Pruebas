@@ -57,17 +57,10 @@ uv run behave
 
 Resultado esperado: **8 scenarios passed** (4 fijos + 4 del outline)
 
----
-
-## 3. Seguridad (bandit)
-
-```powershell
-uv run bandit -r src/ -ll
-```
 
 ---
 
-## 4. API FastAPI
+## 3. API FastAPI
 
 Levantar servidor:
 
@@ -86,7 +79,7 @@ Documentacion interactiva: http://127.0.0.1:8000/docs
 
 ---
 
-## 5. Rendimiento (Locust, 30 usuarios, P95 < 300ms)
+## 4. Rendimiento (Locust, 30 usuarios, P95 < 300ms)
 
 Terminal 1 (API):
 
@@ -104,18 +97,10 @@ Al final debe aparecer: `OK: P95=XXms dentro del limite de 300ms`
 
 ---
 
-## 6. Pipeline CI (GitHub Actions)
+## 5. Pipeline CI (GitHub Actions)
 
 En **cada push** corre: pytest + behave + bandit + Locust con 30 usuarios.
 
-Subir a GitHub:
-
-```powershell
-git remote add origin https://github.com/TU_USUARIO/recargaya.git
-git push -u origin master
-```
-
----
 
 ## Estructura
 
