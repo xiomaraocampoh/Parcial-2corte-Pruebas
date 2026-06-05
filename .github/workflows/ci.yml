@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      # astral-sh/setup-uv instalará automáticamente Python 3.14 basándose en tu archivo .python-version
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
