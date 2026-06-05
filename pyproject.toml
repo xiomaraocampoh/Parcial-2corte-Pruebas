@@ -1,0 +1,12 @@
+[project]
+name = "recargayaparcial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "behave>=1.3.3",
+    "flask>=3.1.3",
+    "locust>=2.44.1",
+    "pytest>=9.0.3",
+]
